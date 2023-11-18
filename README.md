@@ -1,6 +1,6 @@
-Absolutely, I can help you create a README file for your maze level generation project. Here's a template for the README.md file based on the information you provided:
 
-```markdown
+
+
 # Game Level Generation - Generating Maze Puzzle Game Levels
 
 This project focuses on generating maze puzzle game levels using Python. It employs various search algorithms like Kruskal's algorithm, Prim's algorithm, recursive backtracking, and Depth-First Search (DFS) to generate and ensure solvability of the maze.
