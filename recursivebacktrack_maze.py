@@ -1,3 +1,10 @@
+'''
+The Recursive Backtracking algorithm is a method used to create mazes. It works by starting at a particular cell within a grid. It marks the current cell as visited and randomly chooses a neighboring cell that hasn't been visited yet. If an unvisited neighbor is found, it moves to that cell and repeats the process, marking the new cell as visited. This continues until it reaches a dead-end where no unvisited neighbors are available.
+
+Upon reaching a dead-end, the algorithm backtracks to the most recently visited cell that has unvisited neighbors and explores those unvisited cells. This process of exploring, marking as visited, and backtracking continues until all cells have been visited, generating a maze with interconnected pathways.
+
+This algorithm heavily relies on recursion to explore the maze's pathways and backtrack when needed, ensuring all cells are visited and creating a maze with no loops or isolated sections.
+'''
 import tkinter as tk
 import random
 from collections import deque
