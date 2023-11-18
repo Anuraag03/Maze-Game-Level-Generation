@@ -32,7 +32,7 @@ Recursive backtracking is a technique used to solve problems through exploration
 ### Depth-First Search (DFS)
 DFS is an algorithm used for traversing or searching tree or graph data structures. In maze generation, DFS is used to ensure that the generated maze is solvable by checking for paths between the starting point and endpoint.
 
-#### Code Snippet Example:
+
 
 
 ## Additional Resources
