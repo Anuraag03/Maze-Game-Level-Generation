@@ -68,6 +68,7 @@ python main.py
 
 
 - Prim's Algorithm Maze(example)
+
   ![prims](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/540aa952-6f9d-43aa-a510-385e84868032)
 
   
