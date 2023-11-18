@@ -27,12 +27,15 @@ Prim's algorithm is another minimum spanning tree algorithm. It starts from an a
 ### Recursive Backtracking
 Recursive backtracking is a technique used to solve problems through exploration of all possible solutions, backtracking from dead ends, and continuing the search until the solution is found. In maze generation, recursive backtracking creates the maze by building and carving out paths.
 
+![recursive backtrack](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/63588416-c17a-4eed-98b8-b5737ce150fa)
 
 
 ### Depth-First Search (DFS)
 DFS is an algorithm used for traversing or searching tree or graph data structures. In maze generation, DFS is used to ensure that the generated maze is solvable by checking for paths between the starting point and endpoint.
 
+## GUI 
 
+![gui](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/e05a501c-aafe-498b-9ab9-e2c0317a7419)
 
 
 ## Additional Resources
