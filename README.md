@@ -58,6 +58,21 @@ Run the main.py file in your Python environment. This file serves as the entry p
 python main.py
 ```
 
+### Step 3: Enter Height and Width Values and generate Mazes
+![gui1](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/cb70c0ab-6ee1-41ec-a47a-0ac7950f88bb)
+
+
+- Kruskal's Algorithms Maze(example)
+  
+ ![kruskalmaze](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/7fae1c77-9d86-4c37-a128-e0079778713d)
+
+
+- Prim's Algorithm Maze(example)
+  ![prims](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/540aa952-6f9d-43aa-a510-385e84868032)
+
+  
+- Recursive Backtracking Algorithm Maze(example)
+![recursive backtracking maze jpg](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/ae878896-0bec-4c12-b772-c2d894697652)
 
 
 
