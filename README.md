@@ -61,7 +61,7 @@ python main.py
 ### Step 3: Enter Height and Width Values and generate Mazes
 ![gui1](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/cb70c0ab-6ee1-41ec-a47a-0ac7950f88bb)
 
-
+Red is the starting point and Green indicates the goal point / ending point.
 - Kruskal's Algorithms Maze(example)
   
  ![kruskalmaze](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/7fae1c77-9d86-4c37-a128-e0079778713d)
