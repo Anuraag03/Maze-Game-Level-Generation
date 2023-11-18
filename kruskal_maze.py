@@ -73,12 +73,15 @@ class KruskalMaze:
                 if self.is_wall_removable(cell):
                     removable_walls.append(cell)
 
+        # Mark starting and ending cells
+        
+
         # Remove walls until all cells are connected.
-        while self.disjoint_set.set_count > 1:
+        while self.disjoint_set.set_count > 1 and removable_walls:
             # Select a random wall.
             wall_index = random.randint(0, len(removable_walls) - 1)
             wall = removable_walls[wall_index]
-
+    
             # Check if the cells on either side of the wall are connected.
             if wall.x % 2 == 1:
                 cell1 = Cell(wall.x, wall.y - 1)
@@ -86,21 +89,22 @@ class KruskalMaze:
             else:
                 cell1 = Cell(wall.x - 1, wall.y)
                 cell2 = Cell(wall.x + 1, wall.y)
-
+    
             if self.disjoint_set.find(cell1) != self.disjoint_set.find(cell2):
                 # Remove the wall.
                 self.maze[wall.y][wall.x] = CELL_PASSAGE
                 self.disjoint_set.union(cell1, cell2)
-
+    
                 # Remove the wall from the list of removable walls.
                 removable_walls.pop(wall_index)
-
+    
                 # Pause the execution to simulate animation delay.
                 self.draw_maze()  # Update the canvas
                 self.root.update()
                 delay = ANIMATION_DELAY / \
                     (self.maze_width * self.maze_height) ** 2
                 time.sleep(delay)
+        self.mark_start_end_cells()
 
     def is_wall_removable(self, cell):
         '''
@@ -135,11 +139,48 @@ class KruskalMaze:
                 if self.maze[y][x] == CELL_WALL:
                     self.canvas.create_rectangle(x * cell_size, y * cell_size, (x + 1)
                                                  * cell_size, (y + 1) * cell_size, fill=CELL_DISPLAY_FILL)
-                else:
-                    group_index = self.disjoint_set.find(Cell(x, y))
-                    hex_color = self.disjoint_set.color_list[group_index]
+                elif self.maze[y][x] == 'START':  # Draw starting cell in red
                     self.canvas.create_rectangle(x * cell_size, y * cell_size, (x + 1)
-                                                 * cell_size, (y + 1) * cell_size, fill=hex_color)
+                                                 * cell_size, (y + 1) * cell_size, fill='red')
+                elif self.maze[y][x] == 'END':  # Draw ending cell in green
+                    self.canvas.create_rectangle(x * cell_size, y * cell_size, (x + 1)
+                                                 * cell_size, (y + 1) * cell_size, fill='green')
+                else:
+                    # Set passable cells to a constant white color.
+                    self.canvas.create_rectangle(x * cell_size, y * cell_size, (x + 1)
+                                                 * cell_size, (y + 1) * cell_size, fill='white')
 
         # Update the canvas.
         self.root.update()
+    def mark_start_end_cells(self):
+        '''
+        Description: Marks a random cell as the starting cell (red) and another random cell as the ending cell (green).
+        '''
+        # Get random coordinates for the starting cell.
+        start_x = random.randint(1, self.maze_width - 2)
+        start_y = random.randint(1, self.maze_height - 2)
+        while self.maze[start_y][start_x] != CELL_PASSAGE:
+            start_x = random.randint(1, self.maze_width - 2)
+            start_y = random.randint(1, self.maze_height - 2)
+
+        # Get random coordinates for the ending cell (ensuring it's different from the starting cell).
+        end_x = random.randint(1, self.maze_width - 2)
+        end_y = random.randint(1, self.maze_height - 2)
+        while self.maze[end_y][end_x] != CELL_PASSAGE or (start_x == end_x and start_y == end_y):
+            end_x = random.randint(1, self.maze_width - 2)
+            end_y = random.randint(1, self.maze_height - 2)
+
+        # Mark the starting and ending cells with red and green colors respectively.
+        cell_size = WINDOW_SIZE // max(self.maze_width, self.maze_height)
+        self.canvas.create_rectangle(
+            start_x * cell_size, start_y * cell_size,
+            (start_x + 1) * cell_size, (start_y + 1) * cell_size,
+            fill='red'
+        )
+        self.canvas.create_rectangle(
+            end_x * cell_size, end_y * cell_size,
+            (end_x + 1) * cell_size, (end_y + 1) * cell_size,
+            fill='green'
+        )
+
+        

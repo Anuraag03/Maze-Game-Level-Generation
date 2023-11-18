@@ -1,14 +1,8 @@
 '''
-class DisjointSet
-Description: This class implements the disjoint set data structure.
-The disjoint set data structure is implemented using a forest of trees. Each
-tree represents a set of connected cells. Each node in the tree represents a
-cell. Each node has a parent pointer that points to the parent node. The root
-node of each tree represents the set. The root node has a parent pointer that
-points to itself. The disjoint set data structure has two operations: find and
-union. The find operation returns the root node of the tree that contains the
-given node. The union operation merges two trees into one tree by making the
-root node of one tree point to the root node of the other tree.
+
+The "DisjointSet" class is responsible for implementing the disjoint set data structure. It employs a collection of trees, where each tree represents a set of interconnected cells. Within these trees, every node represents an individual cell and maintains a pointer to its parent node. The root node of each tree signifies the entire set and is identified by having a parent pointer that points to itself.
+
+The disjoint set data structure primarily operates through two key methods: "find" and "union." The "find" operation locates and returns the root node of the tree containing a given node. Meanwhile, the "union" operation merges two trees into a single tree by reassigning the root node of one tree to point towards the root node of the other tree, effectively combining their structures.
 '''
 import random
 
