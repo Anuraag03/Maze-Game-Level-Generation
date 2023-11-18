@@ -9,6 +9,10 @@ This project focuses on generating maze puzzle game levels using Python. It empl
 - Python
 - Tkinter for GUI development
 
+## Aim Of the Project
+
+A python script that can procedurally generate solvable game levels for a maze puzzle game by utlizing Artificial Intelligence Search Algorithms 
+
 ## Algorithms Implemented
 
 ### Kruskal's Algorithm
