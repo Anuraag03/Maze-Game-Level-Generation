@@ -9,6 +9,10 @@ This project focuses on generating maze puzzle game levels using Python. It empl
 - Python
 - Tkinter for GUI development
 
+## Aim Of the Project
+
+A python script that can procedurally generate solvable game levels for a maze puzzle game by utlizing Artificial Intelligence Search Algorithms 
+
 ## Algorithms Implemented
 
 ### Kruskal's Algorithm
@@ -27,11 +31,49 @@ Prim's algorithm is another minimum spanning tree algorithm. It starts from an a
 ### Recursive Backtracking
 Recursive backtracking is a technique used to solve problems through exploration of all possible solutions, backtracking from dead ends, and continuing the search until the solution is found. In maze generation, recursive backtracking creates the maze by building and carving out paths.
 
+![recursive backtrack](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/63588416-c17a-4eed-98b8-b5737ce150fa)
 
 
 ### Depth-First Search (DFS)
 DFS is an algorithm used for traversing or searching tree or graph data structures. In maze generation, DFS is used to ensure that the generated maze is solvable by checking for paths between the starting point and endpoint.
 
+## GUI 
+
+![gui](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/e05a501c-aafe-498b-9ab9-e2c0317a7419)
+
+## Directions to Run the Script
+
+To run the script, follow these steps:
+
+### Step 1: Install Tkinter
+
+Ensure you have Tkinter installed. Tkinter usually comes pre-installed with Python. However, if you encounter any issues, you can install it using pip:
+
+```bash
+pip install tk
+```
+### Step 2: Run the Script
+Run the main.py file in your Python environment. This file serves as the entry point for the maze level generation program.
+```bash
+python main.py
+```
+
+### Step 3: Enter Height and Width Values and generate Mazes
+![gui1](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/cb70c0ab-6ee1-41ec-a47a-0ac7950f88bb)
+
+
+- Kruskal's Algorithms Maze(example)
+  
+ ![kruskalmaze](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/7fae1c77-9d86-4c37-a128-e0079778713d)
+
+
+- Prim's Algorithm Maze(example)
+
+  ![prims](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/540aa952-6f9d-43aa-a510-385e84868032)
+
+  
+- Recursive Backtracking Algorithm Maze(example)
+![recursive backtracking maze jpg](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/ae878896-0bec-4c12-b772-c2d894697652)
 
 
 
