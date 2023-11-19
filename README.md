@@ -75,6 +75,78 @@ Red is the starting point and Green indicates the goal point / ending point.
 - Recursive Backtracking Algorithm Maze(example)
 ![recursive backtracking maze jpg](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/ae878896-0bec-4c12-b772-c2d894697652)
 
+## Efficiency and Complexity analysis with Visualizations
+
+### 1. Kruskal's Algorithm
+- **Functionality**: Generates a maze by connecting passages and removing walls between cells.
+- **Steps**:
+    1. Create a grid of passages and walls.
+    2. Randomly select walls and remove if they connect disjoint sets of cells.
+- **Time Complexity**: O(E log E)
+- **Space Complexity**: O(V + E)
+
+### 2. Prim's Algorithm
+- **Functionality**: Constructs a maze by adding the closest cell to an existing tree.
+- **Steps**:
+    1. Start with a single cell as the initial tree.
+    2. Add the closest cell to the tree until all cells are included.
+- **Time Complexity**: O(E log V)
+- **Space Complexity**: O(V + E)
+
+### 3. Recursive Backtracking Algorithm
+- **Functionality**: Generates a maze by recursively exploring and backtracking.
+- **Steps**:
+    1. Randomly choose a direction and explore until reaching a dead-end.
+    2. Backtrack and explore unvisited paths.
+- **Time Complexity**: O(V + E)
+- **Space Complexity**: O(V)
+
+## Solvability Checking Algorithm
+
+### Depth-First Search (DFS)
+- **Functionality**: Finds a path between start and end cells in the maze.
+- **Steps**:
+    1. Recursively explore possible directions until reaching the end cell or a dead-end.
+    2. Backtrack if a dead-end is reached.
+- **Time Complexity**: O(V + E)
+- **Space Complexity**: O(V)
+
+## Comparative Analysis
+- **Kruskal vs. Prim**:
+    - Kruskal's performs better for dense graphs; Prim's for sparse graphs.
+    - Kruskal's has higher time complexity but more random layouts.
+    - Prim's creates more structured mazes.
+- **Kruskal/Prim vs. Recursive Backtracking**:
+    - Kruskal's and Prim's guarantee solvability; Recursive Backtracking may not.
+    - Recursive Backtracking is faster but may have more dead-ends.
+
+      Kruskal v/s Prim v/s Recusive Backtracking
+
+Scatter Plot:
+      
+![dotplotfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/a7e6d0b4-a381-49cb-823e-e9415f89a87b)
+
+Heatmap :
+
+![heatmapfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/ad0bb070-41d0-46f2-a155-3d0d37d4874c)
+
+Barchart :
+
+
+![barchartfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/6db1032f-94ae-43a5-a227-fabcb85ca0ac)
+
+Line Plot:
+
+![lineplotfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/d9e2f9f5-082f-4842-bb7e-eaffc34e7a93)
+
+
+
+
+
+
+The choice of algorithm depends on desired properties like solvability, maze complexity, and structure.
+
+For detailed code implementations and usage examples, refer to the respective algorithm files.
 
 
 ## Additional Resources
