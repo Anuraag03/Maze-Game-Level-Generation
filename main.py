@@ -1,8 +1,7 @@
 import tkinter as tk
-from kruskal_maze import KruskalMaze
 from recursivebacktrack_maze import RecursiveBacktrackingMaze
 from prim_maze import PrimMaze
-
+from kruskal_maze_optimized import generateKruskalMaze,generateKruskalMazeWithStartAndEnd,display_maze_with_start_and_end
 def main():
     root = tk.Tk()
     root.title('Maze Game Level Generator')
@@ -23,7 +22,8 @@ def main():
             width = int(width_entry.get())
             height = int(height_entry.get())
             if 5 <= width <= 40 and 5 <= height <= 40:
-                kruskal_maze = KruskalMaze((width-1)//2, (height-1)//2)
+                maze, start, end = generateKruskalMazeWithStartAndEnd(width, height)
+                display_maze_with_start_and_end(maze,start,end)
             else:
                 print("Width and height should be between 5 and 40.")
         except ValueError:
