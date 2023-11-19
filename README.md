@@ -45,12 +45,13 @@ DFS is an algorithm used for traversing or searching tree or graph data structur
 
 To run the script, follow these steps:
 
-### Step 1: Install Tkinter
+### Step 1: Install Tkinter and Numpy
 
 Ensure you have Tkinter installed. Tkinter usually comes pre-installed with Python. However, if you encounter any issues, you can install it using pip:
 
 ```bash
 pip install tk
+pip install numpy
 ```
 ### Step 2: Run the Script
 Run the main.py file in your Python environment. This file serves as the entry point for the maze level generation program.
