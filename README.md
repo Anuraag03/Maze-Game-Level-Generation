@@ -85,6 +85,7 @@ Red is the starting point and Green indicates the goal point / ending point.
     2. Randomly select walls and remove if they connect disjoint sets of cells.
 - **Time Complexity**: O(E log E)
 - **Space Complexity**: O(V + E)
+  (v stands for vertices and E for edges)
 
 ### 2. Prim's Algorithm
 - **Functionality**: Constructs a maze by adding the closest cell to an existing tree.
