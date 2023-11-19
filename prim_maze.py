@@ -1,3 +1,6 @@
+'''
+Prim's Algorithm for finding the minimum spanning tree (MST) within a connected and undirected graph. Built upon the greedy approach, this algorithm systematically constructs the MST by continuously selecting the lowest-weight edge connecting the existing tree to an unvisited vertex. The algorithm initializes with an arbitrary starting point, expanding iteratively until all vertices are encompassed, ensuring the formation of an acyclic tree with the least cumulative edge weight.
+'''
 import tkinter as tk
 import random
 
