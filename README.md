@@ -124,22 +124,28 @@ Red is the starting point and Green indicates the goal point / ending point.
 
 Scatter Plot:
       
-![dotplotfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/a7e6d0b4-a381-49cb-823e-e9415f89a87b)
+![sctterplot](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/71ae931b-0a30-468c-8f2e-c752b2474045)
 
-Heatmap :
-
-![heatmapfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/ad0bb070-41d0-46f2-a155-3d0d37d4874c)
-
-Barchart :
-
-
-![barchartfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/6db1032f-94ae-43a5-a227-fabcb85ca0ac)
 
 Line Plot:
 
-![lineplotfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/d9e2f9f5-082f-4842-bb7e-eaffc34e7a93)
+![lineplotfinal3](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/e2facae2-159a-467b-bce1-09555cdb2cec)
 
 
+Heatmap :
+
+![heatmapfinal3](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/deb59450-75ee-483c-a5ac-928c31f6640d)
+
+
+Barchart :
+
+![barchartfinal2](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/a278e7bc-3ef0-4987-918b-573b3e3b246b)
+
+
+Box Plot:
+
+
+![boxplotfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/9b81e2bb-5624-4d43-8168-9244fb8eb72c)
 
 
 
