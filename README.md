@@ -145,8 +145,7 @@ Barchart :
 Box Plot:
 
 
-![boxplotfinal](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/9b81e2bb-5624-4d43-8168-9244fb8eb72c)
-
+![boxplotfinal1](https://github.com/Anuraag03/Maze-Game-Level-Generation/assets/95640377/ac4f4464-387a-4758-ae31-71c688d9a429)
 
 
 
