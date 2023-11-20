@@ -1,3 +1,6 @@
+'''
+To call the gui and take input from user 
+'''
 import tkinter as tk
 from recursivebacktrack_maze import RecursiveBacktrackingMaze
 from prim_maze import PrimMaze
